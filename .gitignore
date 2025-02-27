@@ -1,1 +1,4 @@
 .vscode
+bin
+assets/data/notes/*
+assets/data/notes_list.csv
