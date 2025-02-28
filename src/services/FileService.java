@@ -53,10 +53,8 @@ public class FileService {
         try {
             lines.addAll(Files.readAllLines(notesListPath));
 
-            String headerLine = lines.get(0);
-
             // If the headers are correct, return true
-            if (headerLine != null && headers.toString().equals(headerLine)) {
+            if (!lines.isEmpty() && headers.toString().equals(lines.get(0))) {
                 return true;
             }
         } catch (Exception e) {
