@@ -1,2 +1,5 @@
 .vscode
 bin
+assets/data/notes_list.csv
+assets/data/notes/*
+!.gitkeep
